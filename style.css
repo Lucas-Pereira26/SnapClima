@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(14, 28, 80);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+/* Campo rgb(186, 246, 234); Header*/
+.s-header,.temperature-details, .s-sunrise{
+    max-width: 600px;
+    margin: 0 auto;
+}
+.s-header{
+    padding: 0 30px;
+
+
+}
+.header-search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.s-input{
+    border: none;
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    border-radius: 20px 20px 20px;
+    appearance: none;
+    margin-right: -15px;
+
+}
+.s-button{
+    cursor: pointer;
+    min-width: 50px;
+    min-height: 50px;
+    border: none;
+    border-radius: 100%;
+    background: #393939;
+    color: #f3f4fb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 13px 27px -5px, rgba(0, 0, 0.3) 0px 8px 16px -8px;;
+
+}
+.s-button:hover{
+    filter: brightness(1.30);
+}
+.current-date, .city-name{
+    font-family: "Ubuntu", sans-serif;
+}
+.current-date{
+    color: #a2a2be;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.city-name{
+    font-weight: 500;
+    color: rgb(112, 220, 247);
+    font-size: 20px;
+    margin-top: 6px;
+}
+/* Campo Temperatura*/
+.s-temperature{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+}
+.s-temperature-img{
+    width: 125px;
+    margin-top: 35px;
+}
+.s-temperature-description{
+    color:#b6aef0;
+    font-weight: 500;
+    font-size: 27px;
+    margin-top: 30px;
+
+
+}
+.s-temperature-description::first-letter{
+    text-transform: uppercase;
+
+}
+.s-temperature-temp{
+    margin-top:15px;
+    color:#a2a2be;
+}
+.s-temperature-current{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+/* bottom Container*/
+.botton-container{
+    background: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-radius:  25px 25px 0 0;
+    box-shadow: rgb(50, 50, 93, 0.23) 0px 2px 5px -1px, rgba(0, 0, 0.3) 0px 1px 3px -1px;
+}
+.temperature-details{
+    display: flex;
+    margin-top: 30px;
+}
+.details_item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #a2a2be;
+}
+.details_item:last-child{
+    border: none;
+}
+.details-label{
+    color: #a2a2be;
+}
+.details-value, .sunrise-value{
+    margin-top: 7px;
+    font-weight: 500;
+}
+/* Section Sun*/
+.s-sunrise{
+    display: flex;
+    margin: 30px auto;
+}
+.sunrise-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
